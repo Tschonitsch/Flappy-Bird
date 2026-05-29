@@ -1,8 +1,17 @@
 let allPillar = document.getElementById("allPillar");
 
-let x = 0;
+let x = window.innerWidth;
 
 setInterval(function () {
-    x = x + 1;
-    allPillar.style.right = x + "px";
+    x = x - 2;
+
+    if (x < - allPillar.offsetWidth) {
+        x = window.innerWidth;/* breite den fensters */
+        /* rest piller auf rechte seite */
+    }
+
+    allPillar.style.left = x + "px";
+    /* moved pillar nach links */
 });
+
+/* moved die pillar von rechts nach links */
