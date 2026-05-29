@@ -1,0 +1,27 @@
+#bird {
+    width: 80px;
+    position: absolute;
+    transition: 0.3;
+    left: 200px;
+}
+
+body {
+    background-image: url(/flappyBrid/assets/image/background.png);
+}
+
+#allPillar {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+}
+
+#topPillar {
+    top: 50px;
+}
+
+#bottomPillar {
+    bottom: 500px;
+}
