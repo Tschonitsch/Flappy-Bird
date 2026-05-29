@@ -5,23 +5,48 @@
     left: 200px;
 }
 
+html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#points {
+    background-color: rgba(2, 127, 199, 0.548);
+    color: white;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border: 10px;
+    border-color: black;
+    border-radius: 10px;
+    width: 100px;
+}
+
 body {
     background-image: url(/flappyBrid/assets/image/background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 #allPillar {
     height: 100vh;
     display: flex;
-    position: relative;
-    flex-direction: column-reverse;
-    justify-content: space-between;
+    position: absolute; /* nicht relative sond loopt es nicht */
+    flex-direction: column-reverse; /* ka */
+    justify-content: space-between; /* ka */
 
 }
 
 #topPillar {
-    top: 50px;
+    top: 500px;
+    position: relative;
 }
 
 #bottomPillar {
-    bottom: 500px;
+    bottom: auto;
+    position: relative;
 }
