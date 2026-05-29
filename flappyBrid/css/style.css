@@ -23,6 +23,13 @@ html {
     width: 100px;
 }
 
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 body {
     background-image: url(/flappyBrid/assets/image/background.png);
     background-size: 100%;
@@ -35,9 +42,12 @@ body {
 #allPillar {
     height: 100vh;
     display: flex;
-    position: absolute; /* nicht relative sond loopt es nicht */
-    flex-direction: column-reverse; /* ka */
-    justify-content: space-between; /* ka */
+    position: absolute;
+    /* nicht relative sond loopt es nicht */
+    flex-direction: column-reverse;
+    /* ka */
+    justify-content: space-between;
+    /* ka */
 
 }
 
